@@ -3,11 +3,11 @@
 ## computation is saved when the inverse of the 
 ## matrix is required again.
 
+
 ## Function used to store the inverse of a matrix
 ## and to avoid repeating the same procedure several 
 ## times. It should be used in conjunction with 
 ## cacheSolved function.
-
 
 makeCacheMatrix <- function(matrix = matrix()){
     inverse <- NULL
@@ -36,7 +36,6 @@ makeCacheMatrix <- function(matrix = matrix()){
 ## If the inverse of the matrix was already computed,
 ## the inverse is cached from memory, otherwise is 
 ## computed, stored on memory and returned.
-
 
 cacheSolve <- function(x, ...){
     inverse <- x$getinverse()
